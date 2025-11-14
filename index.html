@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniLectures - Университетская платформа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка и навигация -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>🌐 UniLectures</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#materials">Материалы</a></li>
+                    <li><a href="#for-teachers">Преподавателям</a></li>
+                    <li><a href="#login" class="login-btn">Войти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Главный баннер -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Университетские лекции в одном месте</h1>
+                <p>Все предметы, лекции, презентации и методички для вашего удобства. Преподаватели загружают — студенты учатся.</p>
+                <div class="hero-buttons">
+                    <a href="#materials" class="btn primary">Найти лекции</a>
+                    <a href="#for-teachers" class="btn secondary">Я преподаватель</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Как это работает" -->
+        <section class="how-it-works">
+            <h2>Как работает платформа?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Преподаватель загружает</h3>
+                    <p>Загружает материалы один раз для всех студентов.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Материалы хранятся</h3>
+                    <p>Все файлы систематизируются в общей базе.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Студент учится</h3>
+                    <p>Студенты в любое время находят нужные лекции.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с материалами (основная база) -->
+        <section id="materials" class="materials">
+            <h2>База материалов</h2>
+            <div class="filters">
+                <select id="faculty-select">
+                    <option value="">Все факультеты</option>
+                    <option value="it">Информационные технологии</option>
+                    <option value="economics">Экономика</option>
+                    <option value="law">Юриспруденция</option>
+                </select>
+                <select id="subject-select">
+                    <option value="">Все предметы</option>
+                    <option value="programming">Программирование</option>
+                    <option value="math">Высшая математика</option>
+                    <option value="history">История</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Поиск по названию...">
+            </div>
+            <div class="materials-grid" id="materials-grid">
+                <!-- Материалы будут добавляться сюда через JavaScript -->
+            </div>
+        </section>
+
+        <!-- Секция для преподавателей -->
+        <section id="for-teachers" class="for-teachers">
+            <div class="teacher-content">
+                <h2>Для преподавателей</h2>
+                <p>Экономьте время — загружайте материалы один раз для всех студентов.</p>
+                <ul>
+                    <li>✅ Загружайте лекции, презентации, методички</li>
+                    <li>✅ Организуйте материалы по предметам и группам</li>
+                    <li>✅ Получайте статистику просмотров</li>
+                </ul>
+                <button class="btn primary">Начать загрузку материалов</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2023 UniLectures. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
